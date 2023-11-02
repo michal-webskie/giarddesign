@@ -1,0 +1,129 @@
+@use '../utilities/index' as *;
+
+// 399.98px
+
+@media (max-width: $xxs) {
+
+	h2 {
+		font-size: calc($h2 * 0.6);
+	}
+	h3 {
+		font-size: calc($h3 * 0.8);
+	}
+	.padding-top-bottom {
+		padding: calc(12rem * 0.5) 0 calc(16rem * 0.5) 0;
+	}
+	
+	header {
+		height: auto;
+
+		.fluid-container {
+
+			.container {
+				h1,
+				header h2 {
+					margin: 2rem 0 1.5rem;
+					font-size: calc($h1 * 0.4);
+				}
+				p {
+					margin-bottom: 2.5rem;
+					font-size: 1.4rem;
+				}
+				.btn-2 {
+					margin-bottom: 2rem;
+				}
+			}
+		}
+		.swiper-nav {
+			width: 10rem;
+		}
+	}
+
+	.offer {
+
+		.row {
+
+			.col-lg-4 {
+
+				.offer-box {
+
+					h3 {
+						margin-top: 2.5rem;
+					}
+					span {
+						margin-top: 2rem;
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+
+	.about-us {
+		height: 65rem;
+
+		.fluid-container {
+
+			.container {
+
+				.col-lg-6 {
+
+					div {
+
+						h2 {
+							margin-bottom: calc(4rem * 0.7);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.instagram {
+
+		.instagram-box {
+
+			.row {
+
+				div {
+
+					&:last-of-type {
+						flex-direction: column;
+
+						h3 {
+							margin-bottom: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+
+		.container {
+
+			.footer-container {
+
+				.second-row {
+
+					.col-lg-6 {
+
+						&:last-of-type {
+							flex-direction: column;
+							align-items: center;
+
+							a {
+								width: 100%;
+
+								&:last-of-type {
+									margin-top: 1.5rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

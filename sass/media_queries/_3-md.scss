@@ -1,0 +1,165 @@
+@use '../utilities/index' as *;
+
+// 767.98
+
+@media (max-width: $md) {
+
+	.navi-small {
+		margin-bottom: calc(1.6rem * 0.65);
+	}
+	.padding-top-bottom {
+		padding: calc(12rem * 0.6) 0 calc(16rem * 0.6) 0;
+	}
+	h2 {
+		font-size: calc($h2 * 0.8);
+	}
+
+	header {
+		background-image: url('../img/ogrod-zywoplot-giarddesign-sm.webp');
+
+		.fluid-container {
+
+			.container {
+				h1,
+				h2 {
+					font-size: calc($h1 - 1.5rem);
+				}
+			}
+		}
+
+		.swiper-nav {
+			top: 0;
+			bottom: auto;
+			width: calc(19.2rem * 0.65);
+			height: calc(9.6rem * 0.65);
+
+			.swiper-button-prev {
+				left: 2rem;
+			}
+			.swiper-button-next {
+				right: 2rem;
+			}
+			.swiper-button-next:after,
+			.swiper-button-prev:after {
+				width: calc(2.7rem * 0.65);
+				height: calc(2.4rem * 0.65);
+			}
+		}
+	}
+
+	.offer {
+
+		.col-lg-8 {
+			padding-left: calc(11.5rem * 0.4);
+			padding-right: calc(5rem * 0.8);
+
+			h2 {
+				margin-bottom: calc(3.2rem * 0.6);
+			}
+		}
+		.row {
+			margin-top: calc(9.6rem * 0.6);
+
+			.col-lg-4 {
+
+				&:first-of-type {
+					padding-right: 0;
+				}
+				&:nth-of-type(2) {
+					padding: 0;
+				}
+				&:last-of-type {
+					padding-left: 0;
+				}
+				.offer-box {
+					padding: 4.8 4;
+					min-height: 30rem;
+				}
+				span {
+					font-size: 1.6rem;
+				}
+				&:nth-of-type(2) {
+					margin-top: calc(6.4rem * 0.7);
+				}
+				&:last-of-type {
+					margin-top: calc(6.4rem * 0.7);
+				}
+			}
+		}
+	}
+
+	.about-us {
+		height: 60rem;
+
+		.fluid-container {
+
+			.container {
+
+				.col-lg-6 {
+
+					div {
+						padding-left: 4.6rem;
+
+						.navi-small {
+							margin-bottom: 1.2rem;
+						}
+						h2 {
+							margin-bottom: calc(4rem * 0.8);
+							font-size: calc($h2 * 0.8);
+						}
+						.main-paragraph {
+							margin-bottom: calc(7.2rem * 0.8);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.gallery {
+
+		.grid {
+
+			.grid-item {
+
+				max-width: 48%;
+			}
+		}
+	}
+
+	.modal-dialog {
+		max-width: 95%;
+
+		.modal-body {
+			a {
+				max-width: 120px;
+				overflow: hidden;
+			}
+		}
+	}
+
+	.instagram {
+
+		.instagram-box {
+			padding: calc(12rem * 0.6) calc(11rem * 0.6);
+
+			.row {
+
+				div {
+
+					&:first-of-type {
+
+						h2 {
+							font-size: calc(4rem * 0.6);
+						}
+					}
+					&:last-of-type {
+						.btn {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

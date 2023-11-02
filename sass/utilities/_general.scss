@@ -1,0 +1,177 @@
+@use '../utilities/animations' as *;
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-padding-top: var(--scroll-padding, 7.4rem);
+	scroll-behavior: smooth;
+	font-size: 10px;
+}
+body {
+	font-size: 1.6rem;
+	font-family: $fontFamily2;
+	color: $colorBlack;
+}
+h1,
+h2,
+h3 {
+	margin: 0;
+	padding: 0;
+	font-family: $fontFamily1;
+	font-weight: 500;
+	line-height: 1.2;
+}
+h1,
+header h2 {
+	font-size: $h1;
+	font-style: normal;
+	line-height: 1.2;
+}
+h2 {
+	font-size: $h2;
+	line-height: 115%;
+	span {
+		font-style: italic;
+	}
+}
+h3 {
+	font-size: $h3;
+}
+p,
+a {
+	font-size: 1.6rem;
+	font-family: $fontFamily2;
+	line-height: 150%;
+	color: $colorBlack;
+}
+a {
+	@include transition55;
+	text-decoration: none;
+	&:hover {
+		color: initial;
+	}
+}
+.container {
+	padding: 0;
+	max-width: 125rem;
+}
+.padding-top-bottom {
+	padding: 12rem 0 16rem 0;
+}
+
+
+	.underline {
+		position: relative;
+		padding-bottom: 0.6rem;
+
+		&::before {
+			@include transition55();
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 0%;
+			height: 0.15em;
+			background-color: $color1;
+			transform-origin: left;
+		}
+
+		&:hover {
+			color: $color1;
+
+			&::before {
+				right: auto;
+				left: 0;
+				width: 100%;
+			}
+			svg {
+
+				path {
+					fill: $color1;
+				}
+			}
+		}
+	}
+
+.btn {
+	@include transition55();
+	padding: 1.2rem 2.4rem;
+	font-size: 1.6rem;
+	color: $color1;
+	border: 1px solid $color1;
+	border-radius: 200px;
+}
+.btn:focus {
+	box-shadow: none;
+}
+.btn.btn-1 {
+	position: relative;
+	margin-right: 3.6rem;
+	padding: 1.2rem 2.4rem 1.4rem;
+	color: $bgc1;
+	background-color: $color1;
+	overflow: hidden;
+	z-index: 0;
+
+	span {
+		@include transition55();
+		position: relative;
+		z-index: 2;
+	}
+
+	&::before {
+		@include transition55();
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 105%;
+		background-color: $color2;
+		transform: scaleX(0);
+		transform-origin: left;
+		opacity: 0;
+		z-index: 1;
+	}
+
+	&:hover {
+		&::before {
+			transform: scaleX(1);
+			transform-origin: left;
+			opacity: 1;
+		}
+		span {
+			color: $color1;
+		}
+	}
+}
+.btn-2 {
+	.btn-2-arrow {
+		margin-left: 0.8rem;
+
+		svg {
+			width: 1.6rem;
+			height: 1.7rem;
+		}
+	}
+	&:hover {
+		color: $color1;
+		span {
+			svg {
+				animation: arrow-down-up 1.5s infinite;
+			}
+		}
+	}
+}
+.navi-small {
+	display: inline-block;
+	margin-bottom: 1.6rem;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: $color1;
+}

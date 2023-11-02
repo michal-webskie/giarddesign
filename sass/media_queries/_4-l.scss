@@ -1,0 +1,246 @@
+@use '../utilities/index' as *;
+
+// 991.98
+
+@media (max-width: $l) {
+
+	.navbar {
+
+		.container {
+
+			.search-bar-mobile {
+				position: relative;
+				display: inline-block;
+
+				button {
+					background-color: transparent;
+					border: 0;
+					cursor: pointer;
+	
+					svg {
+						width: 2.4rem;
+						height: 2.4rem;
+						
+						path {
+							fill: $colorBlack;
+						}
+					}
+				}
+				.search-form-mobile {
+					position: absolute;
+					display: none;
+					top: 3rem;
+					right: -20rem;
+					left: -25rem;
+					padding: 4rem 4rem;
+					background-color: $colorWhite;
+					border-bottom-left-radius: 9rem;
+					border-bottom-right-radius: 9rem;
+					
+					.form-control {
+						width: 27.5rem;
+						padding-top: 0.8rem;
+						border: 1px solid $colorBlack;
+						border-radius: 20rem;
+
+						&::placeholder {
+							margin-top: 1rem;
+							padding: 1rem 0 0 1.5rem;
+							font-size: 1.6rem;
+						}
+						&:focus {
+							color: rgba($colorBlack, 0.7);
+							border-color: $colorBlack;
+							box-shadow: none;
+						}
+					}
+					button {
+						margin-left: 2rem;
+						color: $colorWhite;
+						background-color: $color1;
+						border-radius: 20rem;
+					}
+				}
+				.show-search-bar-mobile {
+					display: flex;
+				}
+			}
+
+			.navbar-nav {
+
+				.nav-item {
+					padding: 1.7rem 0 0 0;
+				}
+				
+			}
+			.search-bar {
+				display: none;
+			}
+		}
+	}
+
+	header {
+		background-image: url('../img/ogrod-zywoplot-giarddesign.webp');
+		background-position: center center;
+		background-size: cover;
+
+		.fluid-container {
+			background: radial-gradient(ellipse, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0) 100%);
+
+			.container {
+				.col-lg-6 {
+					padding-right: 0;
+				}
+				h1,
+				h2 {
+					font-size: calc($h1 - 1rem);
+				}
+				.btn-2 {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+	.offer {
+
+		.row {
+
+			.col-lg-4 {
+
+				&:last-of-type {
+					margin-top: calc(6.4rem * 0.8);
+					padding-left: 0;
+				}
+				.offer-box {
+					min-height: 34rem;
+				}
+			}
+		}
+	}
+
+	.about-us {
+		height: 68rem;
+		background-image: url('../img/giarddesign-realizacja-zdjecie-w-tle.jpg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		.hero-shadow {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $colorBlack;
+			opacity: 0.7;
+			z-index: 1;
+		}
+		.fluid-container {
+			background-size: 0;
+			z-index: 2;
+
+			.container {
+
+				.col-lg-6 {
+					padding-left: 0;
+
+					div {
+						padding: 0 4rem 0 6.9rem;
+
+						.navi-small {
+							margin-bottom: 1.6rem;
+						}
+						h2 {
+							margin-bottom: 4rem;
+							font-size: $h2;
+						}
+						.main-paragraph {
+							margin-bottom: 7.2rem;
+							font-size: 1.6rem;
+						}
+						.btn-2 {
+							padding: 1.2rem 2.4rem 1.4rem;
+							font-size: 1.6rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.gallery {
+
+		.grid {
+
+			.grid-sizer,
+			.grid-item {
+				max-width: 48%;
+			}
+		}
+	}
+
+	.modal-dialog {
+		max-width: 90%;
+
+		.modal-body {
+
+			a {
+				max-width: 140px;
+			}
+		}
+	}
+
+	.instagram {
+
+		.instagram-box {
+			padding: calc(12rem * 0.8) calc(11rem * 0.8);
+
+			.row {
+
+				div {
+
+					&:first-of-type {
+
+						h2 {
+							font-size: calc(4rem * 0.8);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+
+		.container {
+
+			.footer-container {
+
+				.first-row {
+
+					.col-lg-6 {
+
+						&:first-of-type {
+							display: flex;
+							justify-content: center;
+							margin-bottom: 4rem;
+						}
+					}
+				}
+				.second-row {
+
+					.col-lg-6 {
+						display: flex;
+						justify-content: center;
+
+						&:last-of-type {
+							justify-content: center;
+							margin-top: 2.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

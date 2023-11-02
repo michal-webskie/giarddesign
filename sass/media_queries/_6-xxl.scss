@@ -1,0 +1,60 @@
+@use '../utilities/index' as *;
+
+// 1399.98px
+
+@media (max-width: $xxl) {
+
+	.container {
+		max-width: 90%;
+	}
+
+	header {
+
+		.fluid-container {
+
+			.container {
+
+				.col-lg-6 {
+					padding-right: 2rem;
+				}
+			}
+		}
+	}
+
+	.about-us {
+		height: 58rem;
+
+		.fluid-container {
+
+			.container {
+
+				.col-lg-6 {
+
+					div {
+						padding-left: calc(9.6rem * 0.8);
+
+						.main-paragraph {
+							margin-bottom: calc(7.2rem * 0.7);
+							font-size: 1.4rem;
+						}
+						.btn-2 {
+							padding: calc(1.2rem * 0.8) calc(2.4rem * 0.8) calc(1.4rem * 0.8);
+							font-size: 1.4rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.gallery {
+
+		.grid {
+
+			.grid-item {
+
+				padding-top: 1rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+@use '../utilities/index' as *;
+
+// 475.98
+
+@media (max-width: $xs) {
+
+	.navbar {
+
+		.container {
+
+			.search-bar-mobile {
+				display: flex;
+				flex-direction: column;
+
+				.search-form-mobile {
+					left: -26rem;
+					padding: 4rem 8rem;
+
+					.form-control {
+						width: 20rem;
+					}
+				}
+			}
+		}
+	}
+
+	header {
+
+		.fluid-container {
+
+			.container {
+
+				.btn-2 {
+					margin-top: 2rem;
+				}
+			}
+		}
+	}
+	
+	.instagram {
+
+		.instagram-box {
+			padding: calc(12rem * 0.25) calc(11rem * 0.25);
+
+			.row {
+
+				div {
+
+					&:last-of-type {
+						margin-top: calc(5rem * 0.7);
+
+						h3 {
+							margin-right: 1rem;
+							font-size: 1.3rem;
+						}
+						.btn {
+							padding: calc(1rem * 0.7) calc(2.4rem * 0.7) calc(1.2rem * 0.7);
+							font-size: 1.3rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

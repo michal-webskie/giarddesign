@@ -1,0 +1,33 @@
+@use '../utilities/index' as *;
+
+// 1499.98
+
+@media (max-width: $xxxl) {
+
+	.about-us {
+		height: 68rem;
+
+		.fluid-container {
+
+			.container {
+
+				.col-lg-6 {
+
+					div {
+
+						.main-paragraph {
+							margin-bottom: calc(7.2rem * 0.9);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.gallery {
+
+		.grid {
+			max-width: 100%;
+		}
+	}
+}

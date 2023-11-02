@@ -1,0 +1,138 @@
+@use '../utilities/index' as *;
+
+// 1199.98
+
+@media (max-width: $xl) {
+
+	.padding-top-bottom {
+		padding: calc(12rem * 0.8) 0 calc(16rem * 0.8) 0;
+	}
+	
+	header {
+		height: 65rem;
+
+		.fluid-container {
+
+			.container {
+				h1,
+				h2 {
+					margin-bottom: 4rem;
+					font-size: calc($h1 - 1.5rem);
+				}
+				p {
+					margin-bottom: 5rem;
+					padding-right: 2rem;
+				}
+				.btn-2 {
+					margin-top: 2rem;
+				}
+			}
+		}
+		.swiper-nav {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: calc(19.2rem * 0.85);
+			height: calc(9.6rem * 0.85);
+			background-color: $colorWhite;
+
+			.swiper-button-prev {
+				left: 3.5rem;
+			}
+			.swiper-button-next {
+				right: 3.5rem;
+			}
+			.swiper-button-next:after,
+			.swiper-button-prev:after {
+				width: calc(2.7rem * 0.85);
+				height: calc(2.4rem * 0.85);
+			}
+		}
+	}
+
+	.offer {
+
+		.col-lg-8 {
+			padding-left: calc(11.5rem * 0.6);
+			padding-right: calc(5rem * 0.8);
+
+			h2 {
+				margin-bottom: calc(3.2rem * 0.8);
+			}
+		}
+		.row {
+			margin-top: calc(9.6rem * 0.8);
+
+			.col-lg-4 {
+
+				&:first-of-type {
+					padding-right: calc(4.27rem * 0.8);
+				}
+				&:nth-of-type(2) {
+					padding: 0 calc(2.13rem * 0.8);
+				}
+				&:last-of-type {
+					padding-left: calc(4.27rem * 0.8);
+				}
+				.offer-box {
+					padding: calc(4.8rem * 0.8) calc(4rem * 0.8);
+				}
+				span {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+
+	.about-us {
+		height: 48rem;
+
+		.fluid-container {
+
+			.container {
+
+				.col-lg-6 {
+					
+					div {
+						padding-left: 0;
+
+						.navi-small {
+							margin-bottom: 0.8rem;
+						}
+						h2 {
+							margin-bottom: calc(4rem * 0.7);
+							font-size: calc($h2 * 0.7);
+						}
+						.main-paragraph {
+							margin-bottom: calc(7.2rem * 0.6);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.instagram {
+
+		.instagram-box {
+			width: 100%;
+
+			.row {
+				
+				div {
+
+					&:last-of-type {
+						display: flex;
+						align-items: center;
+						margin-top: 5rem;
+						width: 100%;
+
+						h3 {
+							margin: 0 2rem 0 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
